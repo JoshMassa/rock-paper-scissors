@@ -19,6 +19,7 @@ var playGame = function () {
     if (!options.includes(userChoice)) {
         alert("Please enter a valid option"); {
             playGame();
+            return;
         }
         
     }
@@ -58,6 +59,7 @@ var playGame = function () {
     if (playAgain) {
         playGame();
     }
+    console.log(playAgain);
 };
 
 // Run the game for the first time
